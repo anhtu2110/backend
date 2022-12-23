@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus and Minus input</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 50vh;
+      }
+      #buy-amount {
+        display: flex;
+      }
+      #buy-amount button {
+        width: 35px;
+        height: 35px;
+        outline: none;
+        background: none;
+        border: 1px solid #ececec;
+        cursor: pointer;
+      }
+      #buy-amount button:hover {
+        background-color: #ececec;
+      }
+      #buy-amount button:hover svg {
+        color: #4f4f4f;
+      }
+      #buy-amount #amount {
+        width: 40px;
+        text-align: center;
+        border: 1px solid #ececec;
+      }
+    </style>
+    <div id="buy-amount">
+      <button class="minus-btn" onclick="handleMinus()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 12h-15"
+          />
+        </svg>
+      </button>
+      <input type="text" name="amount" id="amount" value="1" />
+      <button class="plus-btn" onclick="handlePlus()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4.5v15m7.5-7.5h-15"
+          />
+        </svg>
+      </button>
+    </div>
+    <script>
+      let amountElement = document.getElementById("amount");
+      let amount = amountElement.value;
+      console.log(amount);
+      let render = (amount) => {
+        amountElement.value = amount;
+      };
+      //Xử lý handlePlus
+      let handlePlus = () => {
+        amount++;
+        render(amount);
+      };
+    </script>
+  </body>
+</html>

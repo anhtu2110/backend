@@ -1,0 +1,17 @@
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#content {
+  min-height: 600px;
+  padding: 20px 0;
+}
+
+#header,
+#footer {
+  width: 100%;
+  padding: 50px 0;
+  background: grey;
+}

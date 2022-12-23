@@ -1,0 +1,7 @@
+#upddate_account label,
+#update_account input {
+  outline: none;
+}
+#update_account input {
+  padding-left: 5px;
+}

@@ -1,0 +1,153 @@
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 23px;
+}
+a {
+  text-decoration: none !important;
+}
+#wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+#header,
+#footer {
+  background-color: #029ef3;
+}
+#header.mod-page,
+#footer.mod-page {
+  background-color: yellow;
+}
+#header.mod-post,
+#footer.mod-post {
+  background-color: red;
+}
+#header.mod-product,
+#footer.mod-product {
+  background-color: orange;
+}
+ul#main-menu {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ul#main-menu a {
+  display: inline-block;
+  padding: 15px 20px;
+  color: white;
+}
+#content {
+  color: black;
+  min-height: 550px;
+  background-color: rgb(228, 225, 225);
+  padding: 20px;
+}
+#footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #029ef3;
+}
+p.error {
+  color: red;
+}
+a.add_user {
+  display: inline-block;
+  padding: 10px;
+  background-color: white;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+a.add_user:hover {
+  background-color: #f0ed91;
+}
+form#reg label,
+form#reg input {
+  display: block;
+  width: 25%;
+  margin-block: 8px;
+  outline: none;
+}
+form#reg select {
+  width: 25%;
+  padding-block: 5px;
+}
+form#reg input,
+form#reg select {
+  background-color: #f0ed91;
+}
+form#reg input[type="submit"] {
+  outline: none;
+  border: none;
+  background-color: #ff9f1a;
+  padding-block: 5px;
+}
+p.success {
+  color: #2ecc71;
+}
+p.error {
+  color: red;
+}
+p.num_row {
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 20px;
+}
+form.update select,
+form.update input {
+  display: block;
+  width: 25%;
+  margin-block: 5px;
+  padding-block: 5px;
+  background-color: #f0ed91;
+  outline: none;
+}
+form.update label {
+  margin-block: 5px;
+}
+form.update input[type="submit"] {
+  outline: none;
+  border: none;
+  background-color: #ff9f1a;
+}
+/* a.user_update,
+a.user_delete {
+  color: red;
+} */
+a:is(.user_update, .user_delete) {
+  color: red;
+}
+a:is(.user_update, .user_delete):hover {
+  color: #00a8ff;
+}
+table.table_data {
+  margin-inline: auto;
+}
+.num_user_pagging {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p.num_row {
+  margin-block: 20px;
+}
+ul.pagging {
+  list-style: none;
+  padding: 0;
+  margin-block: 20px;
+}
+ul.pagging li {
+  display: inline-block;
+}
+ul.pagging li a {
+  display: inline-block;
+  border: 1px solid #00a8ff;
+  padding: 5px 8px;
+}

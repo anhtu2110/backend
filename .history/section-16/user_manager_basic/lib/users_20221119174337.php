@@ -1,0 +1,9 @@
+<?php
+//Trả về true nếu login
+function is_login()
+{
+    if (isset($_SESSION['is_login'])) {
+        return true;
+    }
+    return false;
+}

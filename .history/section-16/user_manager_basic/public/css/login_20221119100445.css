@@ -1,0 +1,17 @@
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 23px;
+  background-color: #0293f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#wp-form-login {
+  width: 400px;
+  background-color: #fff;
+  height: 600px;
+}
+input {
+  display: block;
+}

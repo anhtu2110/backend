@@ -1,0 +1,9 @@
+body {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 23px;
+  background-color: #0293f3;
+}
+input {
+  display: block;
+}

@@ -1,0 +1,12 @@
+#upddate_account label,
+#update_account input {
+  outline: none;
+  font-size: 16px;
+}
+#update_account input {
+  padding-left: 3px;
+}
+p.error {
+  color: red;
+  margin-block: 5px;
+}
